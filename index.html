@@ -1,6 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="module" src="/@vite/client"></script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,7 +117,7 @@
 
       </section>
 
-      <section>
+      <section class="light">
         <h2>📜 Skills</h2>
         <h2>SKILLS</h2>
   <ul>
@@ -164,19 +167,43 @@
 
 
       </section>
-      <section class="left">
+
       <blockquote>
       <p>“We should not judge people by their peak of excellence;</p>
       <br>
       <p>but by the distance they have traveled from the point where they started.”</p>
       <br>
       <p>- Henry Ward Beecher</p>
-      <br>
 
       </blockquote>
-      </section>
+
+<section class="box">
 
 
+  <div class="container">
+
+    <!-- BUTTONS (input/labels) -->
+    <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+    <label class="btn" for="slide-1-trigger"></label>
+    <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+    <label class="btn" for="slide-2-trigger"></label>
+    <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+    <label class="btn" for="slide-3-trigger"></label>
+    <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+    <label class="btn" for="slide-4-trigger"></label>
+
+    <!-- SLIDES -->
+    <div class="slide-wrapper">
+        <div id="slide-role">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+            <div class="slide slide-4"></div>
+        </div>
+    </div>
+
+</div>
+</section>
 
 
 
@@ -193,7 +220,7 @@
 
     </main>
 
-    
+
 
 
 

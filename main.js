@@ -67,7 +67,7 @@ scene.background = spaceTexture;
 
 const jeffTexture = new THREE.TextureLoader().load('globe.jpg');
 
-const jeff = new THREE.Mesh(new THREE.SphereGeometry(3, 15,15), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3,3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
 
