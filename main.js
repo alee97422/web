@@ -128,3 +128,25 @@ function animate() {
 }
 
 animate();
+// JavaScript code to handle window resize event
+function handleResize() {
+  // Get the window width
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Add or remove classes based on the window width
+  if (windowWidth <= 750) {
+    // Add or remove classes for smaller screens
+    // For example, you can add a class to the body
+    document.body.classList.add('small-screen');
+  } else {
+    // Add or remove classes for larger screens
+    // For example, you can remove the class added for smaller screens
+    document.body.classList.remove('small-screen');
+  }
+}
+
+// Attach the handleResize function to the window resize event
+window.addEventListener('resize', handleResize);
+
+// Call the handleResize function on page load
+handleResize();
